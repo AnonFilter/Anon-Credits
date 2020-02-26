@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+        <script>
+            $.get('referral.txt', function(textData) {
+                window.location.replace(textData);
+            },'text');
+        </script>
+    </body>
+</html>
